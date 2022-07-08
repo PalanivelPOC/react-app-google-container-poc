@@ -2,19 +2,19 @@
 .header {
   width: 100%;
   padding: 2%;
-  background-color: rgb(6, 165, 72);
+  background-color: rgb(6, 165, 157);
   color: white;
   text-align: center;
 }
 
 .display-board {
   width: 100%;
-  background-color: rgb(200, 200, 789);
+  background-color: rgb(238, 175, 240);
   padding: 5%;
 }
 
 .number {
-  color: red;
+  color: rgb(47, 0, 255);
   font-size: 75px;
   text-align: center;
 }
