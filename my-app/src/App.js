@@ -22,7 +22,7 @@ class App extends Component {
 
   getUsers = () => {
     const users = getAllUsers();
-    this.setState({users: users, numberOfUsers: users.length})
+    this.setState({users: users, numberOfUsers: this.state.numberOfUsers + 1})
   }
 
   onChangeForm = (e) => {
@@ -44,13 +44,13 @@ class App extends Component {
         <Header></Header>
         <div className="container mrgnbtm">
           <div className="row">
-            <div className="col-md-8">
-                <CreateUser 
+            <div className="col-md-4">
+                {/* <CreateUser 
                   user={this.state.user}
                   onChangeForm={this.onChangeForm}
                   createUser={this.createUser}
                   >
-                </CreateUser>
+                </CreateUser> */}
             </div>
             <div className="col-md-4">
                 <DisplayBoard
@@ -61,9 +61,9 @@ class App extends Component {
             </div>
           </div>
         </div>
-        <div className="row mrgnbtm">
+        {/* <div className="row mrgnbtm">
           <Users users={this.state.users}></Users>
-        </div>
+        </div> */}
       </div>
     );
   }
